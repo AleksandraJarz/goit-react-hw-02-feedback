@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
+import styles from './Section.module.css';
 
 class Section extends Component {
   render() {
@@ -7,7 +8,7 @@ class Section extends Component {
 
     return (
       <div>
-        <h2> {title}</h2>
+        <h2 className={styles.h2}> {title}</h2>
         {children}
       </div>
     );
